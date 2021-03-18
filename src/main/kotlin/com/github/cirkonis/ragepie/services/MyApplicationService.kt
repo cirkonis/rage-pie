@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.cirkonis.ragepie.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.cirkonis.ragepie.MyBundle
 
 class MyApplicationService {
 
