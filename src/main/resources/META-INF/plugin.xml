@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.github.cirkonis.ragepie</id>
-    <name>rage-pie</name>
+    <name>RagePie</name>
     <vendor>cirkonis</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -16,4 +16,11 @@
         <listener class="com.github.cirkonis.ragepie.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.cirkonis.ragepie.PopupDialogAction" class="com.github.cirkonis.ragepie.PopupDialogAction"
+                text="Pop RAGE PIE Dialog Action">
+            <override-text place="MainMenu" text="RAGE Dialog Action"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
